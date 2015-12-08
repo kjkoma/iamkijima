@@ -1,3 +1,11 @@
+html { 
+  background: url(/assets/sky-background-1077084_1920.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
+  background-color: transparent;
   font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "ŸàƒSƒVƒbƒN" , "Yu Gothic" , "ŸàƒSƒVƒbƒN‘Ì" , "YuGothic" , "ƒqƒ‰ƒMƒmŠpƒS Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "ƒƒCƒŠƒI" , Meiryo , "‚l‚r ‚oƒSƒVƒbƒN" , "MS PGothic" , sans-serif;
 }
