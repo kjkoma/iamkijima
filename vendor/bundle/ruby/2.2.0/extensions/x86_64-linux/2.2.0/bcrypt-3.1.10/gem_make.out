@@ -1,0 +1,15 @@
+/usr/local/rvm/rubies/ruby-2.2.1/bin/ruby -r ./siteconf20151208-8512-17v1rdx.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20151208-8512-k7ws0

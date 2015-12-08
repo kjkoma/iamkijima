@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @me.name %>
+</p>
+
+<p>
+  <strong>Birthcity:</strong>
+  <%= @me.birthcity %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @me.birthday %>
+</p>
+
+<p>
+  <strong>Livingplace:</strong>
+  <%= @me.livingplace %>
+</p>
+
+<%= link_to 'Edit', edit_me_path(@me) %> |
+<%= link_to 'Back', mes_path %>

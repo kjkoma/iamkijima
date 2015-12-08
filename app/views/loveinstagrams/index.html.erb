@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Loveinstagrams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loveword</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loveinstagrams.each do |loveinstagram| %>
+      <tr>
+        <td><%= loveinstagram.loveword %></td>
+        <td><%= link_to 'Show', loveinstagram %></td>
+        <td><%= link_to 'Edit', edit_loveinstagram_path(loveinstagram) %></td>
+        <td><%= link_to 'Destroy', loveinstagram, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loveinstagram', new_loveinstagram_path %>

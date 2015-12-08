@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Loveyotubes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loveword</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loveyotubes.each do |loveyotube| %>
+      <tr>
+        <td><%= loveyotube.loveword %></td>
+        <td><%= link_to 'Show', loveyotube %></td>
+        <td><%= link_to 'Edit', edit_loveyotube_path(loveyotube) %></td>
+        <td><%= link_to 'Destroy', loveyotube, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loveyotube', new_loveyotube_path %>
