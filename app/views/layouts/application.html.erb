@@ -5,9 +5,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'bootstrap.min' , media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    'bootstrap-theme.min' , media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag    'custom', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag     controller.controller_name , media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    'custom_min', media: 'screen and (max-width:480px)', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'custom', media: 'screen and (min-width:480px)', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'googlemap', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
