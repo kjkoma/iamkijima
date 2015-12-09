@@ -2,8 +2,8 @@ class LoveyotubesController < ApplicationController
   before_action :set_loveyotube, only: [:show, :edit, :update, :destroy]
 
   # GET /youtube
-  def youtube
-    @mes = Me.first
+  def home
+    @me = Me.first
     @loveyotubes = Loveyotube.first
   end
 
