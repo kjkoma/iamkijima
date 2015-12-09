@@ -1,0 +1,63 @@
+html { 
+  background: url(/assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+  font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+/* Bootstrap */
+.icon-bar{
+  background-color: #ffffff;
+}
+.nav a {
+  color: #ffffff;
+}
+
+/* Owned */
+.profile {
+  color : #ffffff;
+  border : solid 1px #77cccc;
+  background-color: #ffffff;
+}
+
+/* ************************************************************************** */
+/* welcome page                                                               */
+/* ************************************************************************** */
+.home_main {
+  padding-top: 4%;
+}
+.home_title {
+  font-size: 500%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: #ffffff;
+}
+.home_link {
+  font-size: 120%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0.8;
+}
+.home_link:visited {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.home_link:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #3461f5;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.home_link:active {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}

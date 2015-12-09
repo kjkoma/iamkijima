@@ -1,0 +1,9 @@
+<div class="profile_image text-center"><%= image_tag("me.png", :size => "128x128", :alt => "me") %></div>
+<div class="profile text-center">
+  <p><%= @me.name %></p>
+  <h3 class="profile_label">出身</h3>
+  <p><%= @me.birthcity %></p>
+  <h3 class="profile_label">誕生</h3>
+  <p><%= @me.birthday %></p>
+  <div class="profile_footer text-center"><%= image_tag("footer.gif", :size => "377x95", :alt => "") %></div>
+</div>

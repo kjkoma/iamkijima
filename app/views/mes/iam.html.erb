@@ -1,0 +1,26 @@
+<% provide(:select_link_living, "_select") %>
+<% provide(:select_link_youtube, "") %>
+<% provide(:select_link_instagram, "") %>
+
+<script type="text/javascript">
+  drawMap("<%= @me.livingplace %>");
+</script>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-3">
+      <%= render 'layouts/profile' %>
+    </div>
+    <div class="col-md-9">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <%= render 'layouts/header' %>
+        </div>
+        <div class="row-fluid">
+          <div class="col-md-12" id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

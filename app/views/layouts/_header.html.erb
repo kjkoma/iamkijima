@@ -1,0 +1,24 @@
+<header class="navbar nabvar-fixed-top" role="navigation">
+  <div class="container-fluid">
+
+    <!-- mobile用レイアウト -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-nav-menu" aria-expanded="true">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- pc用レイアウト -->
+    <div class="collapse navbar-collapse" id="global-nav-menu">
+      <ul class="nav nav-pills nav-justified">
+        <!-- <li class="me_link"><%= link_to "Me", iam_path %></li> -->
+        <li><%= link_to "Living Place", living_path, {:class => "nav_line#{yield(:select_link_living)}"} %></li>
+        <li><%= link_to "Youtube", youtube_path, {:class => "nav_line#{yield(:select_link_youtube)}"} %></li>
+        <li><%= link_to "Instagram", instagram_path, {:class => "nav_line#{yield(:select_link_instagram)}"} %></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
