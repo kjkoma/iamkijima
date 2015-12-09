@@ -33,3 +33,8 @@
   border: 1px solid #ffffff;
   color: #ffffff;
 }
+
+
+@media screen and (min-width: 0px) and (max-device-width: 320px) {
+  padding-top: 20%;
+}

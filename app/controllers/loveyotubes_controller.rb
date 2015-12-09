@@ -1,6 +1,12 @@
 class LoveyotubesController < ApplicationController
   before_action :set_loveyotube, only: [:show, :edit, :update, :destroy]
 
+  # GET /youtube
+  def youtube
+    @mes = Me.first
+    @loveyotubes = Loveyotube.first
+  end
+
   # GET /loveyotubes
   # GET /loveyotubes.json
   def index

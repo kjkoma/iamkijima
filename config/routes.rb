@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcomes#index'
 
+  # Matches path
+  match '/iam'       , to: 'mes#iam'            , via: 'get'
+  match '/living'    , to: 'mes#living'         , via: 'get'
+  match '/youtube'   , to: 'loveyoutubes#home'  , via: 'get'
+  match '/instagram' , to: 'loveinstagram#home' , via: 'get'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

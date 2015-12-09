@@ -1,6 +1,12 @@
 class LoveinstagramsController < ApplicationController
   before_action :set_loveinstagram, only: [:show, :edit, :update, :destroy]
 
+  # GET /instagram
+  def instagram
+    @mes = Me.first
+    @loveinstagrams = Loveinstagram.first
+  end 
+
   # GET /loveinstagrams
   # GET /loveinstagrams.json
   def index

@@ -1,6 +1,16 @@
 class MesController < ApplicationController
   before_action :set_me, only: [:show, :edit, :update, :destroy]
 
+  # GET /iam
+  def iam
+    @me = Me.first
+  end
+
+  # GET /living
+  def living
+    @me = Me.first
+  end
+
   # GET /mes
   # GET /mes.json
   def index
