@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   root 'welcomes#index'
 
   # Matches path
-  match '/iam'       , to: 'mes#iam'            , via: 'get'
-  match '/living'    , to: 'mes#living'         , via: 'get'
-  match '/youtube'   , to: 'loveyotubes#home'   , via: 'get'
-  match '/instagram' , to: 'loveinstagram#home' , via: 'get'
+  match '/iam'       , to: 'mes#iam'             , via: 'get'
+  match '/living'    , to: 'mes#living'          , via: 'get'
+  match '/youtube'   , to: 'loveyotubes#home'    , via: 'get'
+  match '/instagram' , to: 'loveinstagrams#home' , via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

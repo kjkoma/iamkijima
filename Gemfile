@@ -55,5 +55,6 @@ gem 'sprockets-rails', '~> 2.3.3'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+#gem 'gracenote'
 
 

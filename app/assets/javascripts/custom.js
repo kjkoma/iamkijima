@@ -85,3 +85,69 @@ function parseYoutubeResultObject(rso)
 
   return ary;
 }
+
+/**
+  iTunes APIから取得する関数
+*/
+var itunesSearch = function(term, limit) {
+
+  // 検索条件のベースとなるオブジェクト
+  var params = {
+    lang: 'ja_jp',
+    entry: 'music',
+    media: 'music',
+    country: 'JP',
+  };
+
+  params.term  = term;    // 検索ワード
+  params.limit = limit;  // 検索数
+
+  // iTunes APIをコールする
+  $.ajax({
+    url: 'https://itunes.apple.com/search',
+    method: 'GET',
+    data: params,
+    // dataTypeをjsonpにする必要があります
+    dataType: 'jsonp',
+
+    // 処理が成功したら、jsonが返却されます
+    success: function(json) {
+      renderItunesSeachList(json);
+    },
+
+    error: function() {
+      console.log('itunes api search error. ', arguments);
+    },
+  });
+};
+// Render the Itunes Search List document
+function renderItunesSeachList(rso)
+{
+  var videoList = parseItunesResultObject(rso);
+  $.each(videoList,function(index,obj){
+    $('#instagram_container').append(
+       '<div class="col-md-2 col-sm-2">' +
+         '<a href="' + obj.previewUrl + '" target="blank">' + 
+           '<img src="' + obj.artworkUrl + '" class="img-rounded">' +
+           '<p>' + obj.trackName + '</p>' +
+         '</a>' +
+       '</div>');
+  });
+}
+// Parse for Itunes Search Result Object
+function parseItunesResultObject(rso)
+{
+  var ary = new Array();
+  var items = rso.results;
+
+  for (var i = 0; i < items.length; i++) {
+    var item = {
+      "previewUrl"  : items[i].previewUrl,
+      "trackName"   : items[i].trackName,
+      "artworkUrl"  : items[i].artworkUrl100
+    }
+    ary.push(item);
+  }
+
+  return ary;
+}
