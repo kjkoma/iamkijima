@@ -48,6 +48,7 @@ body {
   border: 1px solid #ffffff;
   color: #ffffff;
 }
+/*
 .home_link:hover {
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -55,6 +56,11 @@ body {
   color: #3461f5;
   text-decoration: none;
   opacity: 0.8;
+}
+*/
+.home_link:hover {
+  border: 2px solid #ffffff;
+  text-decoration: none;
 }
 .home_link:active {
   border: 1px solid #ffffff;
@@ -163,5 +169,5 @@ body {
 #instagram_container div a p {
   color: #ffffff;
   padding: 6px 0 6px 0;
-  height: 42px;
+  height: 72px;
 }
