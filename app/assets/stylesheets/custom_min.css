@@ -123,6 +123,12 @@ body {
   width: 100%;
   height: 100%;
 }
+#iammap {
+  display: none;
+}
+#profile_area {
+  display: none;
+}
 
 /* ************************************************************************** */
 /* Living Place Page                                                          */
@@ -130,7 +136,7 @@ body {
 #map {
   margin-top: 20px;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 /* ************************************************************************** */
@@ -146,12 +152,12 @@ body {
 #youtube_container div a:hover {
 }
 #youtube_container div a img {
-  width: 94%;
+  width: 100%;
 }
 #youtube_container div a p {
   color: #ffffff;
-  padding: 6px 0 6px 0;
-  height: 42px;
+  padding: 2px 0 2px 0;
+  height: 72px;
 }
 
 /* ************************************************************************** */
