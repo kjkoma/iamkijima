@@ -11,6 +11,12 @@ body {
   font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 }
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 /* ************************************************************************** */
 /* BootStrap                                                                  */
 /* ************************************************************************** */
@@ -83,6 +89,12 @@ body {
 .nav_line_select {
   width: 94%;
   border-bottom: solid 6px #245cf1;
+}
+#iamheader {
+  display: none;
+}
+#home_navi {
+  display: none;
 }
 
 /* ************************************************************************** */
